@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact Us | Epiphany Lawn & Garden</title>
+  <meta name="description" content="Contact Epiphany Lawn & Garden for lawn care, irrigation, tree trimming, drainage, and fertilizing in North Texas. Request a quote or reach out today." />
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="antialiased">
+<header class="bg-white border-b border-epi-500/10">
+  <nav class="max-w-6xl mx-auto h-16 px-6 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-2">
+      <span class="h-7 w-7 rounded-md bg-epi-700 inline-block"></span>
+      <span class="font-semibold text-epi-900">Epiphany Lawn & Garden</span>
+    </a>
+    <ul class="hidden md:flex gap-6 text-sm">
+      <li><a class="link" href="/">Home</a></li>
+      <li><a class="link" href="/about/">About Us</a></li>
+      <li><a class="link" href="/services/">Services</a></li>
+      <li><a class="link" href="/reviews/">Reviews</a></li>
+      <li><a class="link" href="/faqs/">FAQs</a></li>
+      <li><a class="link" aria-current="page" href="/contact/">Contact Us</a></li>
+      <li><a class="btn btn-outline" href="/account/">My Account</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="max-w-6xl mx-auto px-6 py-16">
+  <h1 class="text-3xl font-semibold text-epi-800">Contact Us</h1>
+  <p class="mt-4 text-sm max-w-xl">We'd love to hear from you. Use the form below or reach us at <a class="link" href="tel:2147143491">(214) 714-3491</a>.</p>
+  <form name="contact" method="POST" data-netlify="true" class="mt-6 grid gap-4 md:grid-cols-2">
+    <input type="hidden" name="form-name" value="contact">
+    <input class="card p-3" name="name" placeholder="Name" required>
+    <input class="card p-3" name="email" type="email" placeholder="Email" required>
+    <input class="card p-3" name="phone" placeholder="Phone" required>
+    <input class="card p-3" name="address" placeholder="Service address">
+    <select class="card p-3" name="service">
+      <option>Lawn Care</option>
+      <option>Irrigation</option>
+      <option>Tree Trimming</option>
+      <option>Drainage</option>
+      <option>Fertilizing</option>
+    </select>
+    <input class="card p-3" name="preferred_date" placeholder="Preferred date">
+    <textarea class="card p-3 md:col-span-2" name="message" rows="4" placeholder="Notes"></textarea>
+    <button class="btn btn-primary md:col-span-2" type="submit">Send Message</button>
+  </form>
+</main>
+<footer class="border-t border-epi-500/10">
+  <div class="mx-auto max-w-6xl px-6 py-10 text-sm flex flex-wrap gap-4 justify-between">
+    <span>© Epiphany Lawn & Garden</span>
+    <a href="mailto:info@epiphanylawnandgarden.com" class="link">info@epiphanylawnandgarden.com</a>
+  </div>
+</footer>
+</body>
+</html>
