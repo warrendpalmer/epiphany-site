@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Commercial Lawn Care | Epiphany Lawn & Garden</title>
+  <meta name="description" content="Professional lawn care for commercial properties across North Texas, including mowing, edging, bed maintenance, and debris cleanup for offices, HOAs, and retail centers.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            epi: {
+              900:'#123F2C',
+              800:'#18533A',
+              700:'#1F6F49',
+              500:'#2E8A5E',
+              300:'#5FB789',
+              50:'#EAF5EF'
+            },
+            'epi-purple':'#7A4B86'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="antialiased">
+  <header class="bg-white border-b border-epi-500/10">
+    <nav class="max-w-6xl mx-auto h-16 px-6 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2">
+        <span class="h-7 w-7 rounded-md bg-epi-700 inline-block"></span>
+        <span class="font-semibold text-epi-900">Epiphany Lawn & Garden</span>
+      </a>
+      <ul class="hidden md:flex gap-6 text-sm">
+        <li><a class="link" href="/">Home</a></li>
+        <li><a class="link" href="/about/">About Us</a></li>
+        <li><a class="link" aria-current="page" href="/services/">Services</a></li>
+        <li><a class="link" href="/reviews/">Reviews</a></li>
+        <li><a class="link" href="/faqs/">FAQs</a></li>
+        <li><a class="link" href="/contact/">Contact Us</a></li>
+        <li><a class="btn btn-outline" href="/account/">My Account</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="pt-16">
+    <section class="max-w-6xl mx-auto px-6 py-16">
+      <h1 class="text-3xl md:text-4xl font-semibold text-epi-800 mb-4">Commercial Lawn Care</h1>
+      <p class="text-sm leading-6 max-w-2xl">
+        From HOA common areas and apartment complexes to corporate campuses and retail centers, our commercial lawn care team keeps your grounds looking professional and welcoming for residents, tenants, and visitors.
+      </p>
+      <h2 class="mt-8 text-xl font-semibold text-epi-800">What we do</h2>
+      <ul class="mt-3 space-y-2 text-sm">
+        <li>&bull; Scheduled mowing and edging tailored to your property’s usage</li>
+        <li>&bull; Flowerbed maintenance and seasonal color installations</li>
+        <li>&bull; Debris and litter cleanup with haul‑off</li>
+        <li>&bull; Property inspections and custom reporting</li>
+      </ul>
+      <p class="mt-6 text-sm leading-6 max-w-2xl">
+        We’ll work with property managers to design a maintenance plan that fits your budget and brand standards.
+      </p>
+    </section>
+  </main>
+  <footer class="border-t border-epi-500/10">
+    <div class="mx-auto max-w-6xl px-6 py-10 text-sm flex flex-wrap gap-4 justify-between">
+      <span>&copy; Epiphany Lawn & Garden</span>
+      <a href="mailto:info@epiphanylawnandgarden.com" class="link">info@epiphanylawnandgarden.com</a>
+    </div>
+  </footer>
+</body>
+</html>
