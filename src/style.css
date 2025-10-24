@@ -1,8 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root{
+:root {
   --epi-900:#123F2C;
   --epi-800:#18533A;
   --epi-700:#1F6F49;
@@ -14,31 +10,63 @@
   --epi-text:#123F2C;
 }
 
-body{
-  color:var(--epi-text);
-  background:var(--epi-bg);
+body {
+  color: var(--epi-text);
+  background: var(--epi-bg);
 }
 
-.card{
-  @apply bg-white border border-epi-500/10 rounded-xl shadow-sm;
+.card {
+  background: #ffffff;
+  border: 1px solid rgba(46,138,94,0.1);
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
 }
 
-.btn{
-  @apply inline-flex items-center justify-center px-5 py-3 rounded-pill font-medium;
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  text-decoration: none;
 }
 
-.btn-primary{
-  @apply bg-epi-800 text-white hover:bg-epi-700;
+.btn-primary {
+  background: var(--epi-800);
+  color: #ffffff;
 }
 
-.btn-outline{
-  @apply border-2 border-epi-800 text-epi-800 bg-white hover:bg-epi-50;
+.btn-primary:hover {
+  background: var(--epi-700);
 }
 
-.btn-purple{
-  @apply bg-epi-purple text-white hover:bg-epi-800;
+.btn-outline {
+  border: 2px solid var(--epi-800);
+  background: #ffffff;
+  color: var(--epi-800);
 }
 
-.link{
-  @apply text-epi-500 hover:text-epi-700 underline underline-offset-4;
+.btn-outline:hover {
+  background: var(--epi-50);
+}
+
+.btn-purple {
+  background: var(--epi-purple);
+  color: #ffffff;
+}
+
+.btn-purple:hover {
+  background: var(--epi-800);
+}
+
+.link {
+  color: var(--epi-500);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.link:hover {
+  color: var(--epi-700);
 }
