@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --epi-900:#123F2C;
+  --epi-800:#18533A;
+  --epi-700:#1F6F49;
+  --epi-500:#2E8A5E;
+  --epi-300:#5FB789;
+  --epi-50:#EAF5EF;
+  --epi-purple:#7A4B86;
+  --epi-bg:#FFFFFF;
+  --epi-text:#123F2C;
+}
+
+body{
+  color:var(--epi-text);
+  background:var(--epi-bg);
+}
+
+.card{
+  @apply bg-white border border-epi-500/10 rounded-xl shadow-sm;
+}
+
+.btn{
+  @apply inline-flex items-center justify-center px-5 py-3 rounded-pill font-medium;
+}
+
+.btn-primary{
+  @apply bg-epi-800 text-white hover:bg-epi-700;
+}
+
+.btn-outline{
+  @apply border-2 border-epi-800 text-epi-800 bg-white hover:bg-epi-50;
+}
+
+.btn-purple{
+  @apply bg-epi-purple text-white hover:bg-epi-800;
+}
+
+.link{
+  @apply text-epi-500 hover:text-epi-700 underline underline-offset-4;
+}
